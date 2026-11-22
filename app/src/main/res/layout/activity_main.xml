@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:minHeight="48dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/temperature_image_description"
+            android:src="@drawable/ic_thermometer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/temperatureInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:minHeight="48dp"
+            android:hint="@string/temperature_hint"
+            android:textColorHint="?attr/colorOnSurface"
+            android:inputType="numberSigned|numberDecimal"
+            android:singleLine="true" />
+
+        <RadioGroup
+            android:id="@+id/conversionGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:checkedButton="@+id/fahrenheitToCelsius">
+
+            <RadioButton
+                android:id="@id/fahrenheitToCelsius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/fahrenheit_to_celsius" />
+
+            <RadioButton
+                android:id="@+id/celsiusToFahrenheit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/celsius_to_fahrenheit" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/convert_button" />
+
+        <TextView
+            android:id="@+id/conversionResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

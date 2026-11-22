@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Patrick Dave B. Pancho - Temperature Conversion</string>
+    <string name="temperature_hint">Enter a temperature</string>
+    <string name="fahrenheit_to_celsius">Fahrenheit (°F) to Celsius (°C)</string>
+    <string name="celsius_to_fahrenheit">Celsius (°C) to Fahrenheit (°F)</string>
+    <string name="convert_button">Convert Temperature</string>
+    <string name="temperature_image_description">Thermometer</string>
+</resources>
